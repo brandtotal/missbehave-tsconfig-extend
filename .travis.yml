@@ -5,4 +5,4 @@ node_js:
 sudo: required
 
 script:
-  - strace ./node_modules/.bin/tsc -p bad-test-case/proj1/tsconfig.json
+  - strace ./node_modules/.bin/tsc -p bad-test-case/proj1/tsconfig.json | grep stat
