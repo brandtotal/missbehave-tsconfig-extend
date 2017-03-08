@@ -2,5 +2,7 @@ language: node_js
 node_js:
   - "7"
 
+sudo: required
+
 script:
   - strace ./node_modules/.bin/tsc -p bad-test-case/proj1/tsconfig.json
